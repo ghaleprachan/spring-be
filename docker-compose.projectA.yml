@@ -1,0 +1,9 @@
+services:
+  db:
+    image: postgres
+    container_name: api_db
+    ports:
+      - "5433:5432"
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: Internal@1
